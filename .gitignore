@@ -1,0 +1,20 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Credenciales (nunca deben subirse)
+*.json
+*.pem
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs locales de diagnóstico
+log_principal.txt
+log_contingencia.txt

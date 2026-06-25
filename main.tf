@@ -30,7 +30,7 @@ resource "google_compute_firewall" "permitir_http" {
     ports    = ["80"]
   }
 
-  
+
   source_ranges = ["130.211.0.0/22", "35.191.0.0/16", "0.0.0.0/0"]
 }
 
@@ -61,7 +61,7 @@ resource "google_compute_instance" "servicio_principal" {
 
   network_interface {
     network = google_compute_network.vpc_red.name
-    access_config {} 
+    access_config {}
   }
 
   metadata_startup_script = replace(<<-EOF
